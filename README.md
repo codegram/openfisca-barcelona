@@ -8,7 +8,12 @@ all non domain specific documentation to enable collaboration with other openfis
 
 ## Installing
 
-> We recommend that you use a virtualenv:
+> We recommend that you use a virtualenv. First install virtualenv tool:
+(on a mac first install python by ```brew install python``` )
+```sh
+pip install virtualenv
+```
+create a virtualenv in your home directory:
 ```sh
 virtualenv ${HOME}/.virtualenvs/openfisca-barcelona/
 ```
