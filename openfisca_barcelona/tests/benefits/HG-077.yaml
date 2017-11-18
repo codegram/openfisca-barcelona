@@ -12,7 +12,6 @@
       membres:
       - 2
       ingressos_suficients_per_pagar_el_lloguer: true
-      LLOGMAXBCN: true
       esta_al_corrent_del_pagament_de_lloguer: true
       lloguer_domiciliat: true
       import_del_lloguer: 700
@@ -50,7 +49,6 @@
   unitats_de_convivencia:
      demandant: "pare1"
      ingressos_suficients_per_pagar_el_lloguer: true
-     LLOGMAXBCN: true
      esta_al_corrent_del_pagament_de_lloguer: true
      lloguer_domiciliat: true
      import_del_lloguer: 700
@@ -78,7 +76,6 @@
   unitats_de_convivencia:
      demandant: "pare1"
      ingressos_suficients_per_pagar_el_lloguer: false
-     LLOGMAXBCN: true
      esta_al_corrent_del_pagament_de_lloguer: true
      lloguer_domiciliat: true
      import_del_lloguer: 700
@@ -108,7 +105,6 @@
      demandant: "pare1"
      existeix_un_contracte_de_lloguer: true
      ingressos_suficients_per_pagar_el_lloguer: false
-     LLOGMAXBCN: true
      esta_al_corrent_del_pagament_de_lloguer: true
      lloguer_domiciliat: true
      import_del_lloguer: 150
@@ -138,7 +134,6 @@
      demandant: "pare1"
      existeix_un_contracte_de_lloguer: true
      ingressos_suficients_per_pagar_el_lloguer: false
-     LLOGMAXBCN: true
      esta_al_corrent_del_pagament_de_lloguer: true
      lloguer_domiciliat: true
      import_del_lloguer: 700
@@ -166,7 +161,6 @@
      demandant: "pare1"
      existeix_un_contracte_de_lloguer: true
      ingressos_suficients_per_pagar_el_lloguer: false
-     LLOGMAXBCN: true
      esta_al_corrent_del_pagament_de_lloguer: true
      lloguer_domiciliat: true
      import_del_lloguer: 700
@@ -194,10 +188,9 @@
      demandant: "pare1"
      existeix_un_contracte_de_lloguer: true
      ingressos_suficients_per_pagar_el_lloguer: true
-     LLOGMAXBCN: false
      esta_al_corrent_del_pagament_de_lloguer: true
      lloguer_domiciliat: true
-     import_del_lloguer: 700
+     import_del_lloguer: 1700
   persones:
    - id: "pare1"
      data_naixement: '1961-01-15'
@@ -222,7 +215,6 @@
      demandant: "pare1"
      existeix_un_contracte_de_lloguer: true
      ingressos_suficients_per_pagar_el_lloguer: true
-     LLOGMAXBCN: true
      esta_al_corrent_del_pagament_de_lloguer: false
      lloguer_domiciliat: true
      import_del_lloguer: 700
@@ -250,7 +242,6 @@
      demandant: "pare1"
      existeix_un_contracte_de_lloguer: true
      ingressos_suficients_per_pagar_el_lloguer: true
-     LLOGMAXBCN: true
      esta_al_corrent_del_pagament_de_lloguer: true
      lloguer_domiciliat: false
      import_del_lloguer: 700
@@ -278,7 +269,6 @@
      demandant: "pare1"
      existeix_un_contracte_de_lloguer: true
      ingressos_suficients_per_pagar_el_lloguer: true
-     LLOGMAXBCN: true
      esta_al_corrent_del_pagament_de_lloguer: true
      lloguer_domiciliat: true
      import_del_lloguer: 700
@@ -306,7 +296,6 @@
      demandant: "pare1"
      existeix_un_contracte_de_lloguer: true
      ingressos_suficients_per_pagar_el_lloguer: true
-     LLOGMAXBCN: true
      esta_al_corrent_del_pagament_de_lloguer: true
      lloguer_domiciliat: true
      import_del_lloguer: 700
@@ -334,7 +323,6 @@
      demandant: "pare1"
      existeix_un_contracte_de_lloguer: false
      ingressos_suficients_per_pagar_el_lloguer: true
-     LLOGMAXBCN: true
      esta_al_corrent_del_pagament_de_lloguer: true
      lloguer_domiciliat: true
      import_del_lloguer: 700
@@ -362,7 +350,6 @@
      demandant: "pare1"
      existeix_un_contracte_de_lloguer: true
      ingressos_suficients_per_pagar_el_lloguer: true
-     LLOGMAXBCN: true
      esta_al_corrent_del_pagament_de_lloguer: true
      lloguer_domiciliat: true
      import_del_lloguer: 700
@@ -390,7 +377,6 @@
      demandant: "pare1"
      existeix_un_contracte_de_lloguer: true
      ingressos_suficients_per_pagar_el_lloguer: true
-     LLOGMAXBCN: true
      esta_al_corrent_del_pagament_de_lloguer: true
      lloguer_domiciliat: true
      import_del_lloguer: 700
@@ -420,7 +406,6 @@
      - "fill1"
      existeix_un_contracte_de_lloguer: true
      ingressos_suficients_per_pagar_el_lloguer: true
-     LLOGMAXBCN: true
      esta_al_corrent_del_pagament_de_lloguer: true
      lloguer_domiciliat: true
      import_del_lloguer: 700

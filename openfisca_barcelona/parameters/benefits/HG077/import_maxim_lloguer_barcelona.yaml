@@ -1,0 +1,4 @@
+description: Maximum rent amount accepted to receive a social benefit
+values:
+  2017-01-01:
+    value: 750

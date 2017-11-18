@@ -49,13 +49,17 @@ class existeix_un_contracte_de_lloguer(Variable):
     default = False
 
 
-class LLOGMAXBCN(Variable):     # Fixme: This should be in parameters
+class import_del_lloger_inferior_al_maxim_permes_per_a_barcelona(Variable):
     column = BoolCol
     entity = unitat_de_convivencia
     definition_period = MONTH
     label = "The house hold rent does not exceed maximum rent amount for Barcelona"
     set_input = set_input_dispatch_by_period
     default = False
+
+    def formula(unitat_de_convivencia, period, parameters):
+        return unitat_de_convivencia("import_del_lloguer", period) < \
+               parameters(period).benefits.HG077.import_maxim_lloguer_barcelona
 
 
 class esta_al_corrent_del_pagament_de_lloguer(Variable):
@@ -128,7 +132,7 @@ class HG_077_mensual(Variable):
         compleix_els_requeriments = \
             ((unitat_de_convivencia('ingressos_suficients_per_pagar_el_lloguer', period)
               + unitat_de_convivencia.demandant('victima_de_terrorisme', period)) > 0) \
-            * unitat_de_convivencia('LLOGMAXBCN', period) \
+            * unitat_de_convivencia('import_del_lloger_inferior_al_maxim_permes_per_a_barcelona', period) \
             * unitat_de_convivencia('esta_al_corrent_del_pagament_de_lloguer', period) \
             * unitat_de_convivencia('lloguer_domiciliat', period) \
             * unitat_de_convivencia.demandant('resident_a_catalunya_durant_5_anys', period) \
@@ -152,8 +156,6 @@ class HG_077_mensual(Variable):
                     unitat_de_convivencia('import_del_lloguer', period)
                     - lloguer_just, import_ajuda_maxim_pels_no_BLJ),
                 import_ajuda_minim_pels_no_BLJ)
-        estat_BLJ = unitat_de_convivencia.members('es_BLJ', period)
-        existeix_algun_BLJ = unitat_de_convivencia.any(estat_BLJ)
-        import_ajuda = where(existeix_algun_BLJ, import_ajuda_BLJ, import_ajuda_no_BLJ)
+        import_ajuda = where(unitat_de_convivencia.demandant("es_BLJ", period), import_ajuda_BLJ, import_ajuda_no_BLJ)
 
         return where(compleix_els_requeriments, import_ajuda, 0)
